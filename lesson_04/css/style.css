@@ -1,0 +1,116 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,700&display=swap');
+/* Google Fonts (Plugin) */
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500);
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+@import url('reset.css');
+
+.links {
+	font-family: "Rubik Bubbles", system-ui;
+	font-size: 62px;
+	text-align: center;
+	
+	color: rgba(235, 104, 16, 0.7);
+}
+.links a {
+	color: #fc7c05;
+	/* text-shadow: 4px 3px 0 #7A7A7A; */
+	text-decoration: underline;
+	text-decoration-color: rgba(235, 104, 16, 0.7);
+	
+}
+body	{
+	font-family: "Philosopher", sans-serif;
+	color: #555353;
+	line-height: 1.5;
+}
+.title {
+	
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: #d3d2d2 0px 0px 5px, 
+				 #d3d2d2 0px 0px 10px,
+				 #d3d2d2 0px 0px 15px,
+				 #2dceff 0px 0px 20px,
+				 #2dceff 0px 0px 30px,
+				 #2dceff 0px 0px 40px,
+				 #2dceff 0px 0px 50px,
+				 #2dceff 0px 0px 75px;
+	text-align: center;
+}
+/* main ~ p {
+	font-size: 24px;
+	text-align: center;
+} */
+.span_bold {
+	font-size: 20px;
+	font-weight: 700;
+}
+.article_links {
+	text-align: center;
+	color:#f31e30;
+}
+.title_second {
+	font-size: 20px;
+	color:#f31e30;
+	font-weight: 700;
+}
+footer {
+	text-align: right;
+	text-decoration: underline;
+	text-decoration-color: rgba(235, 104, 16, 0.7);
+	color: rgba(235, 104, 16, 0.7);
+}
+/* #################### Business presentation ######################### */
+.about {
+	font-family: "DM Sans", sans-serif;
+	font-weight: 400;
+}
+.about_title {
+	
+	font-size: 88px;
+	font-weight: 700;
+	color: #1E1B39;
+}
+.about > p {
+	color: #474464;
+	font-size: 24px;
+	line-height: 42px;
+}
+/* #################### Personal portfolio ######################### */
+.professional {
+	font-family: "Work Sans", sans-serif;
+	font-weight: 400;
+}
+.professional_title {
+	font-size: 38px;
+	font-weight: 600;
+	color: #132238;
+	line-height: 50px;
+}
+.professional > p {
+	font-size: 18px;
+	color: #556070;
+	line-height: 24px;
+}
+/* #################### Landing page template ######################### */
+.landing {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+}
+.landing_title {
+	font-size: 50px;
+	font-weight: 500;
+	line-height: 66px;
+	color: #091133;
+}
+.landing > p {
+	font-size: 18px;
+	line-height: 30px;
+	color: #505F98;
+}
