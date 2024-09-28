@@ -1,0 +1,253 @@
+/* Google Fonts (Plugin) */
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500);
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular,600,700);
+
+@import url('reset.css');
+/* * {
+    font-family: "DM sans", sans-serif;
+} */
+header {
+    font-family: "DM sans", sans-serif;
+}
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.nav_list {
+    margin-top: 20px;
+    text-align: center;
+}
+.nav_item {
+    display: inline-block;
+    background: rgb(212, 103, 103);
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 20px;
+}
+.nav_title {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* ============== posts =============*/
+.posts {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "DM sans", sans-serif;
+    
+}
+.posts h2 {
+    text-align: center;
+    font-size: 20px;
+    margin: 40px 0 40px 0;
+}
+.post {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.post_img {
+    width: 50%;
+    padding-left: 50px;
+    display: inline-block;
+}
+.post_img img {
+    font-size: 16px;
+}
+.post_content {
+    font-size: 16px;
+    vertical-align: top;
+    width: 50%;
+    display: inline-block;
+    
+}
+.post_category {
+    color: #477be4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.post_title {
+    font-size: 26px;
+    color: #2c2d30;
+    margin-bottom: 8px;
+}
+.post_second_title {
+    font-size: 14px;
+    color: #8f8d96;
+    margin-bottom: 15px;
+}
+.post_text {
+    margin-bottom: 15px;
+    color: #2c2d30;
+    font-size: 17px;
+    line-height: 1.5;
+}
+/* ================ Landing page =================== */
+.landing {
+    max-width: 540px;
+    margin: 0 auto;
+    margin-top: 90px;
+    font-family: "Roboto", sans-serif;
+}
+.landing_title {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 66px; 
+    letter-spacing: 1px;
+    color: #091133;
+    margin-bottom: 20px;
+}
+.landing_text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #505F98;
+    margin-bottom: 20px;
+}
+.landing_btn {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.landing_btn_1 {
+    background: #111B47;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    min-width: 190px;
+    padding: 5px 30px 5px 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.landing_btn_2 {
+    color: #091133;
+    border: 2px solid #091133;
+    text-align: center;
+    min-width: 190px;
+    padding: 7px 30px 7px 30px;
+    margin-bottom: 30px;
+}
+/* ================Landing page 2 ===================== */
+.landing2 {
+    max-width: 520px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+.landing2_title {
+    color: #091133;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 16px;
+}
+.landing2_block_text {
+    margin-bottom: 70px;
+}
+.landing2_text {
+    color: #6F7CB2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.landing2_cards {
+    margin: -15px;
+    font-size: 0;
+}
+.landing2_card {
+    display: inline-block;
+    margin: 15px;
+}
+.card {
+    max-width: 245px;
+    margin-bottom: 30px;
+}
+.card_img {
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+.card_title {
+    font-size: 16px;
+    color: #091133;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 6px;
+}
+.card_text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #5D6970;
+}
+/* ===================== Dark block ========================== */
+.dark_block {
+    max-width: 1920px;
+    margin: 0 auto;
+    color: #fff;
+    overflow: hidden;
+    font-family: "Manrope", sans-serif;
+    background: #141414;
+}
+.dark_block_title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.dark_block > p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 80px;
+    color: #999;
+}
+.dark_block_cards {
+    margin-left: -15px;
+    margin-right: -15px;
+    font-size: 0;
+}
+.dark_block_card {
+    width: 33.333%;
+    display: inline-block;
+    padding-left: 15px;
+	padding-right: 15px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    background: linear-gradient(222deg, rgba(229, 0, 0, 0.50) -208.03%, rgba(229, 0, 0, 0.00) 41.32%), #0F0F0F;
+}
+.dark_block_card_content {
+    padding: 50px;
+}
+.dark_block_card_content > p {
+    /* padding: 50px; */
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #999;
+}
+.card_head {
+    display: inline-block;
+    margin-bottom: 30px;
+    /* vertical-align: middle; */
+}
+.card_head img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.card_head span {
+    margin-left: 16px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+}
