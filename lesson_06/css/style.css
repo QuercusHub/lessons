@@ -1,0 +1,155 @@
+/* Google Fonts (Plugin) */
+@import url(https://fonts.googleapis.com/css?family=Sixtyfour+Convergence:regular);
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=Epilogue:regular,800);
+@import url('reset.css');
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding-inline: 15px;
+}
+.header {
+    min-height: 250px;
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+    background: #599bb3 url("../img/background.jpg") 0 0 / auto 100% repeat;
+}
+.nav {
+}
+.nav_title {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-size: 46px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+.nav_items {
+    
+}
+.nav_item {
+    background: #ee5011;
+    margin-inline: 30px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(180deg, #599bb3 5%, #27a9c0 100%);
+	background-color:#599bb3;
+	border-radius:14px;
+	border:2px solid #29668f;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+/* ============= Block 1 ================== */
+.content {
+    padding: 30px;
+}
+.block_1 {
+    background: #FDF0E9;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.text {
+    display: inline-block;
+    max-width: 470px;
+    padding-top: 30px;
+}
+.features {
+    color: #EF6D58;
+    font-size: 20px;
+    line-height: 32px; 
+    margin-bottom: 20px;
+}
+.text h2 {
+    color: #391400;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px; 
+    letter-spacing: -1px;
+    margin-bottom: 26px;
+}
+.text p {
+    color: #391400;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 26px;
+}
+.items {
+    color: rgba(57, 20, 0, 0.64);
+    font-size: 16px;
+    line-height: 32px;
+}
+.items li {
+    background: url("../img/check.svg") no-repeat 0 0 / 32px;
+    margin-bottom: 16px;
+    padding-left: 48px;
+    line-height: 32px;
+    min-height: 35px;
+}
+.image {
+    display: inline-block;
+    vertical-align: top;
+}
+/* ====================== Block 2 ========================== */
+.block_2 {
+    background-color: #141414;
+    color: #fff;
+}
+.background {
+    background: url("../img/abstract.png") center / 470px no-repeat,
+                linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%), 
+                linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%),
+                url("../img/background-group.png") center / cover;
+    min-height: 860px;
+    width: 100%;
+}
+.block_content {
+    max-width: 1096px;
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+    margin-top: -64px;
+}
+.block_content h2 {
+    margin-bottom: 14px;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 150%;
+}
+.block_content p {
+    color: #999;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 50px;
+}
+.btn {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    background: #E50000;
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin-bottom: 30px;
+}
+.btn span {
+    background: url("../img/btn.png")  left / 28px no-repeat;
+    padding-left: 32px;
+}
+/* ========================== footer ================================= */
+footer {
+    min-height: 250px;
+    background: 
+                url("../img/smile2.png") left / 150px no-repeat, 
+                url("../img/smile3.png") right / 150px no-repeat, 
+                url("../img/smile4.png") 225px 100px / 150px no-repeat, 
+                url("../img/smile.png") center / 150px no-repeat, 
+                url("../img/background.jpg") 0 0 / auto 100% repeat
+    ;
+}
