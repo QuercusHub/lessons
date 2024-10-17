@@ -1,0 +1,48 @@
+/* Google Fonts (Plugin) */
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,700);
+
+@import url('reset.css');
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+    background: url("../img/background.jpg") 0 0 / auto 50% repeat;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+}
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding-inline: 15px;
+    
+    
+}
+.header {
+    min-height: 100px;
+    padding-top: 30px;
+    background-color: hsla(0, 3%, 20%, 0.95);
+}
+.header h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+.main {
+    background-color: hsla(0, 3%, 20%, 0.95);
+    border: 3px solid red;
+    padding: 20px 20px 20px 20px;
+    color: #fff;
+}
+.text:not(:last-child) {
+    margin-bottom: 30px;
+}
+.text span {
+    padding-left: 20px;
+}
+.image {
+    vertical-align: middle;
+}
+.content-img {
+    max-width: 1000px;
+    border-radius: 6px;
+}
