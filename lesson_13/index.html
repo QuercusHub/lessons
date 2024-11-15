@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 13 - FLEX</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <div class="portfolio">
+                <div class="portfolio__container">
+                    <div class="portfolio__header header-portfolio">
+                        <div class="header-portfolio__label">Portfolio</div>
+                        <h1 class="header-portfolio__title">Latest Work</h1>
+                    </div>
+                    <ul class="portfolio__menu">
+                        <li class="portfolio__item"><a class="portfolio__link" href="#">Show All <sup>14</sup></a></li>
+                        <li class="portfolio__item"><a class="portfolio__link" href="#">Design <sup>6</sup></a></li>
+                        <li class="portfolio__item"><a class="portfolio__link" href="#">Branding <sup>4</sup></a></li>
+                        <li class="portfolio__item"><a class="portfolio__link" href="#">Illustration <sup>3</sup></a></li>
+                        <li class="portfolio__item"><a class="portfolio__link" href="#">Motion <sup>1</sup></a></li>
+                    </ul>
+                    <div class="portfolio__gallery gallery">
+                        <a class="gallery__card">
+                            <div class="gallery__img"><img src="img/abstract.webp" alt="abstract"></div>
+                            <div class="gallery__content content">
+                                <div class="content__label">Desing Desing</div>
+                                <h2 class="content__title">Sofa</h2>
+                            </div>
+                        </a>
+                        <a class="gallery__card">
+                            <div class="gallery__img"><img src="img/branding.webp" alt="keyboard"></div>
+                            <div class="gallery__content content">
+                                <div class="content__label">Branding</div>
+                                <h2 class="content__title">KeyBoard</h2>
+                            </div>
+                        </a>
+                        <a class="gallery__card">
+                            <div class="gallery__img"><img src="img/illustration.webp" alt="abstract"></div>
+                            <div class="gallery__content content">
+                                <div class="content__label">Illustration</div>
+                                <h2 class="content__title">Work Media</h2>
+                            </div>
+                        </a>
+                        <a class="gallery__card">
+                            <div class="gallery__img"><img src="img/motion.webp" alt="keyboard"></div>
+                            <div class="gallery__content content">
+                                <div class="content__label">Motion</div>
+                                <h2 class="content__title">DDDone</h2>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="portfolio__button">
+                        <a class="button slide" href="#">Explore More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-block">
+                <div class="contact-block__container">
+                    <div class="contact-block__content content-items">
+                        <div class="content-items__started started">
+                            <div class="started__icon">
+                                <img src="img/star-icon.svg" alt="icon star">
+                            </div>
+                            <div class="started__label">Get Started</div>
+                            <div class="started__title">We Help Companies Move Faster</div>
+                            <a class="started__button button button--orange" href="#">Contact Us</a>
+                        </div>
+                        <div class="content-items__card card">
+                            <div class="card__img">
+                                <img src="/img/contact-card.svg" alt="card">
+                            </div>
+                        </div>
+                        <div class="content-items__woman woman">
+                            <div class="woman__img">
+                                <img src="/img/woman.webp" alt="woman">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="events">
+                <div class="events__container">
+                    <div class="events__header header-event">
+                        <div class="header-event__label">Events</div>
+                        <div class="header-event__title">Explore Future Conferences</div>
+                    </div>
+                    <div class="events__cards">
+                        <div class="events__card card">
+                            <div class="card__header">
+                                <div class="card__data">
+                                    <div class="card__day">3</div>
+                                    <div class="card__block-date">
+                                        <div class="card__month">November</div>
+                                        <div class="card__year">2021</div>
+                                    </div>
+                                </div>
+                                <div class="card__time">9:00 am – 3:00 pm</div>
+                            </div>
+                            <div class="card__content">
+                                <div class="card__title">Design Weeks</div>
+                                <div class="card__text">Digital agency is a business you hire to outsource your digital.</div>
+                            </div>
+                            <a class="card__link" href="#">Explore Now</a>
+                        </div>
+                        <div class="events__card card">
+                            <div class="card__header">
+                                <div class="card__data">
+                                    <div class="card__day">15</div>
+                                    <div class="card__block-date">
+                                        <div class="card__month">November</div>
+                                        <div class="card__year">2021</div>
+                                    </div>
+                                </div>
+                                <div class="card__time">1:00 pm – 8:00 pm</div>
+                            </div>
+                            <div class="card__content">
+                                <div class="card__title">Interior Design</div>
+                                <div class="card__text">Marketing efforts, instead of handling in-house.</div>
+                            </div>
+                            <a class="card__link" href="#">Explore Now</a>
+                        </div>
+                        <div class="events__card card">
+                            <div class="card__header">
+                                <div class="card__data">
+                                    <div class="card__day">2</div>
+                                    <div class="card__block-date">
+                                        <div class="card__month">December</div>
+                                        <div class="card__year">2021</div>
+                                    </div>
+                                </div>
+                                <div class="card__time">10:00 am – 2:00 pm</div>
+                            </div>
+                            <div class="card__content">
+                                <div class="card__title">The F design events</div>
+                                <div class="card__text">Provide your business with a variety of digital solutions to promote.</div>
+                            </div>
+                            <a class="card__link" href="#">Explore Now</a>
+                        </div>
+                    </div>
+                    <div class="events__button">
+                        <a class="button slide" href="#">Explore More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="our-team">
+                <div class="our-team__container">
+                    <div class="our-team__header">
+                        <div class="our-team__label">Our Team</div>
+                        <div class="our-team__title">Team of Designers and Developers</div>
+                    </div>
+                    <div class="our-team__cards">
+                        <div class="our-team__card">
+                            <div class="our-team__image">
+                                <img src="/img/person-1.webp" alt="man">
+                            </div>
+                            <div class="our-team__text">
+                                <div class="our-team__lastname">Azah Anyeni</div>
+                                <div class="our-team__major">Designer</div>
+                            </div>
+                        </div>
+                        <div class="our-team__card">
+                            <div class="our-team__image">
+                                <img src="/img/person-2.webp" alt="woman">
+                            </div>
+                            <div class="our-team__text">
+                                <div class="our-team__lastname">Roelof Bekkenenks</div>
+                                <div class="our-team__major">React Developer</div>
+                            </div>
+                        </div>
+                        <div class="our-team__card">
+                            <div class="our-team__image">
+                                <img src="/img/person-3.webp" alt="woman">
+                            </div>
+                            <div class="our-team__text">
+                                <div class="our-team__lastname">Leonardo Oliveira</div>
+                                <div class="our-team__major">Illustrator</div>
+                            </div>
+                        </div>
+                        <div class="our-team__card">
+                            <div class="our-team__image">
+                                <img src="/img/person-4.webp" alt="man">
+                            </div>
+                            <div class="our-team__text">
+                                <div class="our-team__lastname">Izabella Tabakova</div>
+                                <div class="our-team__major">Product Designer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="founder">
+                <div class="founder__container">
+                    <div class="founder__block">
+                        <div class="founder__image">
+                            <img src="/img/man.webp" alt="">
+                        </div>
+                        <div class="founder__content">
+                            <div class="founder__label">Founder Words</div>
+                            <div class="founder__quote">Digital agency is a business you hire to outsource your digital marketing efforts</div>
+                            <div class="founder__lastname">Ren Delan</div>
+                            <div class="founder__major">Founder</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">© 2024 Всі права захищені. Інформація надана для освітніх цілей.</footer>
+    </div>
+</body>
+</html>
