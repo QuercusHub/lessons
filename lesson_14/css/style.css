@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular,600);
+@import url('reset.css');
+
+body {
+	font-family: "Manrope", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #fff;
+	background-color: #28293E;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-inline: 15px;
+	
+}
+.footer {
+	text-align: center;
+	margin: 0 auto;
+}
+/* ================================================================= */
+/* ==========================    Dark form    ====================== */
+/* ================================================================= */
+
+.dark {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding: 100px;;
+	background: #141414;
+}
+.dark__container {
+	
+}
+.support-form {
+	margin: 0 auto;
+	max-width: 976px;
+	/* min-height: 500px; */
+	border-radius: 12px;
+    border: 1px solid #262626;
+    background: #0F0F0F;
+}
+.form-support {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	padding: 50px;
+}
+.form-support__row {
+	display: flex;
+	flex-wrap: wrap;
+    gap: 46px;
+	justify-content: space-between;
+}
+.form-support__block {
+	display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1 0 413px;
+}
+.form-support__label {
+	font-weight: 600;
+	line-height: 27px;
+}
+.form-support__input {
+	border-radius: 8px;
+    border: 1px solid #262626;
+    background: #141414;
+    padding: 20px;
+    color: #999;
+	line-height: 27px;
+}
+.form-support__textarea {
+	min-height: 163px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background: #141414;
+    color: #999;
+    line-height: 27px;
+    resize: vertical;
+}
+.button-dark {
+	color: #FFF;
+    border-radius: 8px;
+    padding: 18px 24px;
+    background: #E50000;
+    font-weight: 600;
+}

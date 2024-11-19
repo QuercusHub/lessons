@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 14 - Form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <div class="dark">
+                <div class="dark__container">
+                    <div class="support-form">
+                        <form class="form-support" action="#">
+                            <div class="form-support__row">
+                                <div class="form-support__block">
+                                    <label for="form-support__input" class="form-support__label">First Name</label>
+                                    <input type="text" name="form[]" class="form-support__input" placeholder="Enter First Name" required="">
+                                </div>
+                                <div class="form-support__block">
+                                    <label for="form-support__input" class="form-support__label">Last Name</label>
+                                    <input type="text" name="form[]" class="form-support__input" placeholder="Enter Last Name" required="">
+                                </div>
+                            </div>
+                            <div class="form-support__row">
+                                <div class="form-support__block">
+                                    <label for="form-support__input" class="form-support__label">Email</label>
+                                    <input type="email" name="form[]" class="form-support__input" placeholder="Enter your Email" required="">
+                                </div>
+                                <div class="form-support__block">
+                                    <label for="form-support__input" class="form-support__label">Phone Number</label>
+                                    <input type="tel" name="form[]" class="form-support__input" placeholder="Enter Phone Number" required="">
+                                </div>
+                            </div>
+                            <div class="form-support__row">
+                                <div class="form-support__block">
+                                    <label for="form-support__textarea" class="form-support__label">Message</label>
+                                    <textarea name="form[]" class="form-support__textarea" placeholder="Enter your Message" required=""></textarea>
+                                </div>
+                            </div>
+                            <div class="form-support__row">
+                                <div class="form-support__checkbox">
+                                    <input id="checkbox-item-01" class="form-support__input" checked="" name="checkbox-item" value="1" type="checkbox">
+                                </div>
+                                
+                                <button type="submit" class="button-dark"> Send Message</button>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">© 2024 Всі права захищені. Інформація надана для освітніх цілей.</footer>
+    </div>
+    </html>
+</body>
