@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Manrope:regular,600);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:regular,600);
 @import url('reset.css');
 
 body {
@@ -21,6 +22,7 @@ body {
 .footer {
 	text-align: center;
 	margin: 0 auto;
+	padding: 20px;
 }
 /* ================================================================= */
 /* ==========================    Dark form    ====================== */
@@ -89,4 +91,115 @@ body {
     padding: 18px 24px;
     background: #E50000;
     font-weight: 600;
+}
+.button-dark:hover {
+	background: #F00
+}
+.checkbox__input {
+	appearance: none;
+}
+.checkbox__label {
+	color: #999;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+}
+.checkbox__label::before {
+	content: "";
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    border: 1px solid #262626;
+}
+.checkbox__input:checked + .checkbox__label::before {
+    background: url(../img/check.svg) 0 0 / 100% no-repeat;
+}
+/* ================================================================= */
+/* ==========================    White form    ===================== */
+/* ================================================================= */
+.white {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding: 100px;;
+	background: #fff;
+	font-family: "Work sans", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #697484;
+}
+.white__container {
+}
+.white__form {
+	display: flex;
+    gap: 50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+	margin: 0 auto;
+	max-width: 560px;
+    background: #fff;
+}
+.form-white {
+	display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+	
+}
+.form-white__row--flex {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+}
+.white__text {
+	color: #87909D;
+}
+.form-white__input {
+    border-bottom: 1.5px solid #E6E8EB;
+	width: 100%;
+    padding-bottom: 14px;
+}
+.form-white__input:focus::placeholder {
+	color: #A53DFF;
+}
+.form-white__input:focus{
+	border-bottom: 1.5px solid #A53DFF; 
+	outline: none;  
+}
+.form-white__textarea {
+    border-bottom: 1.5px solid #E6E8EB;
+    min-height: 48px;
+    resize: vertical;
+}
+.form-white__textarea:focus{
+	border-bottom: 1.5px solid #A53DFF;
+	outline: none;  
+}
+.form-white__textarea:focus::placeholder{
+	color: #A53DFF;
+}
+.button--form-white {
+	padding: 12px 24px;
+    border-radius: 4px;
+    background: #A53DFF;
+    display: inline-flex;
+    gap: 12px;
+	width: fit-content;
+    align-items: center;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.button--form-white:hover {
+	background-color: #8431CC;
+}
+.button--form-white::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(../img/paper-plane.svg) center / contain no-repeat;
 }

@@ -16,33 +16,34 @@
                         <form class="form-support" action="#">
                             <div class="form-support__row">
                                 <div class="form-support__block">
-                                    <label for="form-support__input" class="form-support__label">First Name</label>
-                                    <input type="text" name="form[]" class="form-support__input" placeholder="Enter First Name" required="">
+                                    <label for="firstname" class="form-support__label">First Name</label>
+                                    <input type="text" id="firstname" name="form[]" class="form-support__input" placeholder="Enter First Name" required="">
                                 </div>
                                 <div class="form-support__block">
-                                    <label for="form-support__input" class="form-support__label">Last Name</label>
-                                    <input type="text" name="form[]" class="form-support__input" placeholder="Enter Last Name" required="">
+                                    <label for="lastname" class="form-support__label">Last Name</label>
+                                    <input type="text" id="lastname" name="form[]" class="form-support__input" placeholder="Enter Last Name" required="">
                                 </div>
                             </div>
                             <div class="form-support__row">
                                 <div class="form-support__block">
-                                    <label for="form-support__input" class="form-support__label">Email</label>
-                                    <input type="email" name="form[]" class="form-support__input" placeholder="Enter your Email" required="">
+                                    <label for="email" class="form-support__label">Email</label>
+                                    <input type="email" id="email" name="form[]" class="form-support__input" placeholder="Enter your Email" required="">
                                 </div>
                                 <div class="form-support__block">
-                                    <label for="form-support__input" class="form-support__label">Phone Number</label>
-                                    <input type="tel" name="form[]" class="form-support__input" placeholder="Enter Phone Number" required="">
+                                    <label for="phone" class="form-support__label">Phone Number</label>
+                                    <input type="tel" id="phone" name="form[]" class="form-support__input" placeholder="Enter Phone Number" required="">
                                 </div>
                             </div>
                             <div class="form-support__row">
                                 <div class="form-support__block">
-                                    <label for="form-support__textarea" class="form-support__label">Message</label>
-                                    <textarea name="form[]" class="form-support__textarea" placeholder="Enter your Message" required=""></textarea>
+                                    <label for="message" class="form-support__label">Message</label>
+                                    <textarea name="form[]" id="message" class="form-support__textarea" placeholder="Enter your Message"></textarea>
                                 </div>
                             </div>
                             <div class="form-support__row">
-                                <div class="form-support__checkbox">
-                                    <input id="checkbox-item-01" class="form-support__input" checked="" name="checkbox-item" value="1" type="checkbox">
+                                <div class="checkbox">
+                                    <input id="checkbox-01" class="checkbox__input" name="form[]" type="checkbox">
+                                    <label class="checkbox__label" for="checkbox-01">I agree with Terms of Use and Privacy Policy</label>
                                 </div>
                                 
                                 <button type="submit" class="button-dark"> Send Message</button>
@@ -52,8 +53,41 @@
                     </div>
                 </div>
             </div>
+            <div class="white">
+                <div class="white__container">
+                    <div class="white__form">
+                        <div class="white__text">There are many variations of passages of Lorem Ipsu available,
+                            but the majority have suffered alte.</div>
+                        <form action="#" class="form-white">
+                            <div class="form-white__row">
+                                <input name="form[]" id="name" type="text" required="" placeholder="Name*" class="form-white__input">
+                            </div>
+                            <div class="form-white__row">
+                                <input name="form[]" id="email" type="email" required="" placeholder="Email*" class="form-white__input">
+                            </div>
+                            <div class="form-white__row">
+                                <input name="form[]" id="location" type="text" placeholder="Location" class="form-white__input">
+                            </div>
+                            <div class="form-white__row form-white__row--flex">
+                                <div class="">
+                                    <input name="form[]" id="budget" type="text" required="" placeholder="Budget*" class="form-white__input">
+                                    
+                                </div>
+                                <div>
+                                    <input name="form[]" id="subject" type="text" required="" placeholder="Subject*" class="form-white__input">
+                                </div>
+                                
+                            </div>
+                            <div class="form-white__row">
+                                <textarea name="form[]" id="textarea-light" placeholder="Message*" required="" class="form-white__textarea"></textarea>
+                            </div>
+                            <button type="submit" form="form-white" class="button button--form-white">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="footer">© 2024 Всі права захищені. Інформація надана для освітніх цілей.</footer>
     </div>
-    </html>
 </body>
+</html>
