@@ -181,6 +181,12 @@ body {
 .form-white__textarea:focus::placeholder{
 	color: #A53DFF;
 }
+.form-white__item--budget {
+	flex: 1 0 35%;
+}
+.form-white__item--subject {
+	flex: 1 0 60%;
+}
 .button--form-white {
 	padding: 12px 24px;
     border-radius: 4px;
