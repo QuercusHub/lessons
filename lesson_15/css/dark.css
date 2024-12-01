@@ -1,0 +1,284 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700);
+
+@import url('reset.css');
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #141414;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+[class*="__container"] {
+	max-width: 1628px;
+    margin: 0 auto;
+    padding-inline: 15px;
+}
+.header {
+	text-align: center;
+	padding-block: 30px;
+    font-size: 28px;
+}
+.header:hover {
+	color: #E50000;
+	transition: all 0.35s;
+}
+.footer {
+	text-align: center;
+	margin: 0 auto;
+    padding: 20px;
+}
+/* ===============================================================================
+================================= Must movies ====================================
+================================================================================== */
+.must-watch {
+    padding-block-start: 50px;
+    padding-block-end: 25px;
+}
+.must-watch__container {
+}
+.movies__block {
+    padding: 50px;
+    border-radius: 12px;
+    border: 1px solid #262626;
+}
+.movies__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-block-end: 65.5px;
+}
+.movies__title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+@media (max-width: 991.98px) {
+    .movies__title {
+        font-size: 30px;
+    }
+}
+.movies__navigation {
+}
+
+.navigation {
+    display: flex;
+    flex: 0 0 205px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #1F1F1F;
+    background: #0F0F0F;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+}
+@media (max-width: 849.98px) {
+    .movies__navigation {
+        display: none;
+    }
+}
+.navigation__paginations {
+    flex: 0 0 60px;
+    justify-content: center;
+    display: flex;
+    gap: 3px;
+    }
+.navigation__pagination {
+    flex: 0 0 14px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #333;
+    transition: all 0.5s;
+}
+.navigation__pagination--active {
+    flex: 0 0 18px;
+    background-color: #E50000;
+}
+.navigation__arrow {
+    border-radius: 6px;
+    flex: 0 0 44px;
+    aspect-ratio: 1;
+    border: 1px solid #1F1F1F;
+    background: #1A1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+.navigation__arrow:hover, .navigation__pagination:hover {
+    background: #E50000;
+}
+.navigation__arrow--left {
+
+}
+.navigation__arrow--right {
+    transform: rotate(180deg);
+}
+.movies__cards {
+    display: flex;
+    column-gap: 20px;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+.movies__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    background: #1A1A1A;
+    padding: 20px;
+    flex: 0 1 24%;
+}
+.movies__card:hover {
+    border: 1px solid #999;
+}
+
+.movies__img {
+    aspect-ratio: 318 / 404;
+    width: 100%;
+    object-fit: contain;
+    max-width: 320px;
+    min-inline-size: 207px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background-color: #363636;
+}
+.movies__footer {
+    color: #999;
+    font-weight: 500;
+}
+.card-footer {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-footer__time {
+    align-self: center;
+    border-radius: 51px;
+    border: 1px solid #262626;
+    padding: 6px 10px 6px 32px;
+    background: url(../img/dark-theme/clock.svg) 6px / 24px no-repeat, #141414;
+}
+@media (max-width: 1391.98px) {
+    .card-footer__time {
+        font-size: 12px;
+        background-size: 16px;
+        padding: 4px 5px 4px 26px;
+    }
+}
+.card-footer__stars {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    border-radius: 51px;
+    border: 1px solid #262626;
+    background: #141414;
+    padding: 6px 10px;
+}
+@media (max-width: 1399.98px) {
+    .card-footer__stars {
+        padding: 6px 8px;
+    }
+}
+@media (max-width: 1299.98px) {
+    .card-footer__stars {
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+}
+.card-footer__star {
+    width: 18px;
+    aspect-ratio: 1;
+    max-width: 100%;
+}
+@media (max-width: 1399.98px) {
+    .card-footer__star {
+        width: 16px;
+    }
+}
+@media (max-width: 1169.98px) {
+    .card-footer__star {
+        width: 14px;
+    }
+}
+/* ===============================================================================
+================================= Collection  ====================================
+================================================================================== */
+.our-genres {
+    padding-block-start: 25px;
+    padding-block-end: 50px;
+}
+.our-genres__cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+@media (max-width: 1100px) {
+    .our-genres__cards, .movies__cards {
+        column-gap: 10px;
+    }
+}
+.genres-card {
+    flex: 0 0 18.3%;
+    min-inline-size: 181px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 24px;
+}
+.genres-card:hover {
+    border: 1px solid #999;
+}
+.genres-card__cover {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.genres-card__cover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, #1a1a1a 101.79%);
+}
+.genres-card__img {
+    flex: 0 0 calc(50% - 2.5px);
+    aspect-ratio: 105 / 123;
+    border-radius: 10px;
+    background-color: grey;
+    overflow: hidden;
+}
+.genres-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.genres-card__link {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    line-height: 1.5;
+    transition: all 0.3s;
+}
+@media (max-width: 1100px) {
+    .genres-card__link {
+        font-size: 14px;
+    }
+}
+.genres-card__link:hover {
+    color: #E50000;
+}

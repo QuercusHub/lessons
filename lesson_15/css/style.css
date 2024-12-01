@@ -10,6 +10,15 @@ body {
 	color: #fff;
 	background-color: #28293E;
 }
+.header {
+	text-align: center;
+	padding-block-start: 30px;
+	font-size: 28px;
+}
+.header:hover {
+	color: #EF6D58;
+	transition: all 0.35s;
+}
 .wrapper {
 	min-height: 100%;
 	overflow: clip;
@@ -72,7 +81,7 @@ body {
     }
 }
 
-.portfolio__menu {
+.header-portfolio__menu {
 	max-width: 574px;
 	margin: 0 auto;
 	display: flex;
@@ -82,11 +91,11 @@ body {
 	column-gap: 20px;
 }
 @media (max-width: 554.98px) {
-    .portfolio__menu {
+    .header-portfolio__menu {
         display: none;
     }
 }
-.portfolio__select {
+.header-portfolio__select {
     appearance: none;
     font-family: "Epilogue";
     width: 100%;
@@ -96,17 +105,17 @@ body {
     line-height: 2;
 }
 @media (min-width: 554.98px) {
-	.portfolio__select {
+	.header-portfolio__select {
 		display: none;
 	}
 }
-.portfolio__item {
+.header-portfolio__item {
 }
-.portfolio__link:hover {
+.header-portfolio__link:hover {
 	color: #EF6D58;
 	transition: all 0.35s;
 }
-.portfolio__link sup {
+.header-portfolio__link sup {
 	display: inline-block;
 	transform: translateY(-50%);
 	font-size: 14px;
@@ -245,7 +254,7 @@ body {
         padding-block: 52px 30px;
     }
 }
-  .contact-block {
+.contact__block {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
@@ -255,42 +264,38 @@ body {
 	padding-inline: 100px 83px;
 	border-radius: 6px;
 	background-color: #fdf0e9;
-  }
+}
 @media (max-width: 1121.98px) {
-    .contact-block {
+    .contact__block {
         padding-inline: 28px;
     }
 }
-  /* текстовий контент */
-  .contact__heading {
+.contact__heading {
 	flex: 0 1 250px;
-	/* max-width: 248px; */
 	padding-block: 74px;
-  }
-  .contact__heading .section-heading__title {
+}
+.contact__heading .section-heading__title {
 	margin-bottom: 23px;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 1.33;
-	color: #391400;
-  }
-  .contact__heading .section-heading__label {
+	color: #391400;}
+.contact__heading .section-heading__label {
 	margin-bottom: 13px;
-  }
-  
-  /* прямокутна фігура */
-  .contact__rectangle {
+}
+
+.contact__rectangle {
 	position: relative;
 	flex: 0 1 300px;
 	padding-bottom: 16px;
-  }
-  .contact__rectangle img {
+}
+.contact__rectangle img {
 	position: relative;
 	z-index: 3;
 	max-width: 100%;
 	box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
-  }
-  .contact__rectangle::after {
+}
+.contact__rectangle::after {
 	content: "";
 	position: absolute;
 	top: 8px;
@@ -301,40 +306,33 @@ body {
 	border-radius: 6px;
 	background-color: #fff;
 	box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
-  }
-  .contact__rectangle::before {
+}
+.contact__rectangle::before {
 	content: "";
 	position: absolute;
 	top: 16px;
 	left: 32px;
 	z-index: 1;
-	/* для вказання розмірів використано calc можна було вираховувати вручну але з calc простіше  */
 	width: calc(100% - 64px);
 	height: calc(100% - 16px);
 	border-radius: 6px;
 	background-color: #fff;
 	box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
-  }
-  
-  /* картинка дівчини */
-  .contact__image {
+}
+
+.contact__image {
 	position: relative;
 	flex: 0 1 300px;
-	/* align-self: flex-end; вказано щоб притиснути картинку донизу контейнера */
 	align-self: flex-end;
-	padding-left: 53px; /* вказано щоб змістити картинку в праву сторону і щоб декор не виходив за межі  */
+	padding-left: 53px; 
 	margin-top: -60px;
-  
-	/* можна декор вказати фоном */
-	/* background: url("../img/cta/cloude.svg") left 70% / contain no-repeat; */
-  }
-  @media (max-width: 665.98px) {
+}
+@media (max-width: 665.98px) {
     .contact__image {
         margin-top: 0px;
     }
 }
-  /* фігура декору псевдоелементом */
-  .contact__image::before {
+.contact__image::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -342,15 +340,14 @@ body {
 	width: calc(100% + 43px);
 	height: 61.1111%; /* 242/396 */
 	background: url("../img/cloud.svg") left center / contain no-repeat;
-  }
-  .contact__image img {
+}
+.contact__image img {
 	position: relative;
 	z-index: 2;
 	max-width: 100%;
-  }
-  
-  /* декор іконка подарунку згори контейнера */
-  .contact__decore {
+}
+
+.contact__decore {
 	position: absolute;
 	top: 0;
 	left: 7.1795%; /* 84/1170 */
@@ -360,8 +357,8 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  }
-  .contact__decore::before {
+}
+.contact__decore::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -369,18 +366,12 @@ body {
 	width: 100%;
 	height: 100%;
 	background: url("../img/star.svg") center / contain no-repeat;
-	animation: spin 60s linear infinite;
-  }
-  @keyframes spin {
-	100% {
-	  transform: rotate(360deg);
-	}
-  }
-  .contact__decore img {
+}
+.contact__decore img {
 	position: relative;
 	z-index: 2;
 	max-width: 32px;
-  }
+}
 /* ================================================================= */
 /* ==========================   Contact Us   ======================= */
 /* ================================================================= */
@@ -435,7 +426,7 @@ body {
     height: 148px;
     background: url(../img/star.svg) 0 0 / cover no-repeat;
 }
-.started__label {
+.section-heading__label {
 	color: #EF6D58;
     line-height: 2;
     letter-spacing: 3px;
@@ -449,7 +440,7 @@ body {
     line-height: 32px;
 	margin-bottom: 23px;
 }
-.started__button {
+.section-heading__button {
 	
 }
 .button--orange {
@@ -631,7 +622,6 @@ body {
 }
 .events__button {
 	text-align: center;
-	margin-bottom: 140px;
 }
 /* ================================================================= */
 /* ==========================   Our team   ========================= */
@@ -641,7 +631,7 @@ body {
 }
 
 .our-team {
-	margin-bottom: 244px;
+	padding-block: 60px;
 }
 .our-team__label {
 	color: #EF6D58;
@@ -697,7 +687,12 @@ body {
 /* ===========================   Founder  ========================== */
 /* ================================================================= */
 .founder {
-	margin-bottom: 60px;
+	padding-block: 90px;
+}
+@media (max-width: 767.98px) {
+    .founder {
+        padding-block: 40px;
+    }
 }
 .founder__container {
 }
@@ -706,17 +701,31 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
+    align-items: center;
 }
 .founder__image {
-	flex: 0 1 570px;
+	/* flex: 0 1 570px; */
+	flex: 1 0 100%;
+}
+@media (min-width: 991.98px) {
+    .founder__image {
+        flex-basis: 570px;;
+    }
 }
 .founder__image img {
-	max-width: 570px;
+	/* max-width: 570px; */
+	width: 100%;
+    aspect-ratio: 570 / 448;
+    object-position: center;
+    object-fit: cover;
     border-radius: 6px;
 }
 .founder__content {
-	flex: 0 1 470px;
-	align-self: center;
+	/* flex: 0 1 470px;
+	align-self: center; */
+	flex: 1 0 40%;
+    align-self: center;
+	background: url(../img/quote.svg) 83% 40px / 21.2% no-repeat;
 }
 .founder__label {
 	color: #EF6D58;
@@ -732,17 +741,6 @@ body {
 	font-weight: 800;
 	line-height: 48px;
 	margin-bottom: 44px;
-}
-.founder__quote::before {
-	content: "";
-    position: absolute;
-    top: -29.015544%;
-    right: 9.787234%;
-    z-index: -1;
-    width: 100px;
-    max-width: 100%;
-    aspect-ratio: 100 / 80;
-    background: url(../img/quote.svg) 0 0 / 100px no-repeat;
 }
 .founder__lastname {
 	font-size: 20px;
