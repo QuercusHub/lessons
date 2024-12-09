@@ -76,7 +76,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 20px;
     row-gap: 3px;
 }
 .actions-header__button {
@@ -174,13 +174,8 @@ body {
 		inset-inline-start: 0;
 	}
 }
+
 .active {
-}
-.header__actions {
-}
-.actions-header {
-}
-.actions-header__button {
 }
 .button {
 	text-align: center;
@@ -214,5 +209,22 @@ body {
 .button:hover:after{
 	width: 100%;
 }
-.actions-header__icon {
+@media (max-width: 450px) {
+	.header__container {
+		gap: 5px
+	}
+	.header__logo {
+		flex-basis: auto;
+		width: 100px;
+	}
+	.actions-header {
+        column-gap: 10px;
+    }
+	.actions-header__button {
+		min-width: 120px;
+	}
+	.button {
+		padding: 13px 25px;
+	}
 }
+
