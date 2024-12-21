@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Lesson 17 - Portfolio Flex</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="index.html">Link Flex</a>
+                <a href="light-grid.html">Link Light Grid</a>
+            </div>
+        </header>
+        <main class="main">
+            <div class="portfolio">
+                <div class="portfolio__container">
+                    <div class="portfolio__header header-portfolio">
+                        <div class="header-portfolio__label">Portfolio</div>
+                        <h1 class="header-portfolio__title">Latest Work</h1>
+                        <div class="header-portfolio__box">
+                            <select class="header-portfolio__select">
+                                <option value="Show All" selected="">Show All</option>
+                                <option value="Design">Design</option>
+                                <option value="Branding">Branding</option>
+                                <option value="Illustration">Illustration</option>
+                                <option value="Motion">Motion</option>
+                            </select>
+                        </div>
+                        
+                        <ul class="header-portfolio__menu">
+                            <li class="header-portfolio__item"><a class="header-portfolio__link" href="#">Show All <sup>14</sup></a></li>
+                            <li class="header-portfolio__item"><a class="header-portfolio__link" href="#">Design <sup>6</sup></a></li>
+                            <li class="header-portfolio__item"><a class="header-portfolio__link" href="#">Branding <sup>4</sup></a></li>
+                            <li class="header-portfolio__item"><a class="header-portfolio__link" href="#">Illustration <sup>3</sup></a></li>
+                            <li class="header-portfolio__item"><a class="header-portfolio__link" href="#">Motion <sup>1</sup></a></li>
+                        </ul>
+                    </div>
+                    <div class="portfolio__gallery gallery gallery-grid">
+                        <a class="gallery-grid__card">
+                            <div class="gallery-grid__img"><img src="img/abstract-2x.webp" alt="abstract"></div>
+                            <div class="gallery-grid__content content">
+                                <div class="content__label">Desing Desing</div>
+                                <h2 class="content__title">Sofa</h2>
+                            </div>
+                        </a>
+                        <a class="gallery-grid__card">
+                            <div class="gallery-grid__img"><img src="img/branding-2x.webp" alt="keyboard"></div>
+                            <div class="gallery-grid__content content">
+                                <div class="content__label">Branding</div>
+                                <h2 class="content__title">KeyBoard</h2>
+                            </div>
+                        </a>
+                        <a class="gallery-grid__card">
+                            <div class="gallery-grid__img"><img src="img/illustration-2x.webp" alt="abstract"></div>
+                            <div class="gallery-grid__content content">
+                                <div class="content__label">Illustration</div>
+                                <h2 class="content__title">Work Media</h2>
+                            </div>
+                        </a>
+                        <a class="gallery-grid__card">
+                            <div class="gallery-grid__img"><img src="img/motion-2x.webp" alt="keyboard"></div>
+                            <div class="gallery-grid__content content">
+                                <div class="content__label">Motion</div>
+                                <h2 class="content__title">DDDone</h2>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">© 2024 Всі права захищені. Інформація надана для освітніх цілей.</footer>
+    </div>
+    <!-- <script src="js/script.js"></script> -->
+</body>
+</html>
